@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .list{
+        display: flex;
+        gap: 20px;
+        list-style: none;
+        align-items: center;
+        border: 2px solid black;
+    }
+    .home{
+        display: flex;
+        gap: 20px;
+
+    }
+    .manu ul{
+      padding: 20px;
+      list-style: none;
+      background-color: aqua;
+      display: flex;
+      flex-direction: column ;
+      gap: 10px;
+      
+
+    }
+    .manu ul li{
+        font-size: 20px;
+        color: blue;
+        font-weight: 600;
+    }
+    #red{
+        color: red;
+    }
+   .tab{
+    padding: 20px;
+    border-collapse: collapse;
+    border: 2px solid black;
+   
+   }
+   .table td{
+    border: 1px solid black;
+    background-color: green;
+    padding: 20px;
+    text-align: center;
+   }
+   .manu{
+    flex-grow: 2;
+   }
+    .item{
+        flex-grow: 8;
+    }
+    .footer{
+        display: flex;
+    }
+    .section1{
+        flex-grow: 4;
+
+    }
+    .li td{
+        border: 1px solid black;
+    }
+    .as td{
+        border: 1px solid black;
+    }
+    .ad td{
+        border: 1px solid black;
+    }
+    #footer,#footer2{
+        background: rgb(37, 36, 36);
+        color: white;
+        text-align: center;
+        padding: 10px;
+        clear: both;
+    }
+    #online{
+        background-color: rgb(190, 187, 187);
+        color: green;
+        text-align: center;
+        padding: 5px;
+        width: 120px;
+        border-radius: 25px;
+        margin: 10px auto;
+    }
+    .frist{
+        background-color: green;
+    }
+    .snd{
+        background-color: red;
+    }
+</style>
+<body>
+    <div class="navbar">
+        <ul class="list">
+            <li><h2>T&V Lanka</h2></li>
+            <li>home</li>
+        <li>Booking</li>
+        <li>Logout</li>
+<li>Profile</li>
+<li>Admin Dashborad</li>
+<li>Contact Us
+</li>    
+<li>Adout Us</li>
+<li><input type="text" placeholder="search"></li>
+<li><button>
+    search
+</button></li>
+</ul>
+    </div>
+    <div class="home">
+        <div class="manu">
+            <ul>
+                <li>Notification</li>
+                <li>Massage</li>
+                <li>Add Vehicale</li>
+                <li id="red">Booking</li>
+                <li>User</li>
+                <li>Vehicales</li>
+            </ul>
+        </div>
+        <div class="item">
+            <h1>Booking details</h1>
+            <table class="tab" >
+                <tr class="table">
+                    <td>User</td>
+                    <td>Start Date</td>
+                    <td>End Date</td>
+                    <td>Pic Time</td>
+                    <td>Package</td>
+                    <td>Vehicale Catogory</td>
+                    <td>No Vehicles</td>
+                    <td>Book Date</td>
+                    <td>Status</td>
+                    <td>Confirm</td>
+                    <td>Delete</td>
+                </tr>
+                <tr class="li">
+                    <td>Shainee delwita</td>
+                    <td>2019-05-17</td>
+                    <td>2019-05-23</td>
+                    <td>11:59</td>
+                    <td>daily</td>
+                    <td>car
+                    </td>
+                    <td>1</td>
+                    <td>2019-05-21</td>
+                    <td>pending</td>
+                    <td><button class="frist">confirm</button></td>
+                    <td><button class="snd">Delete</button></td>
+                </tr>
+                <tr class="as">
+                    <td>Shainee delwita</td>
+                    <td>2019-o5-18</td>
+                    <td>2019-05-21</td>
+                    <td>11:59</td>
+                    <td>daily</td>
+                    <td>van
+                    </td>
+                    <td>2</td>
+                    <td>2019-05-21</td>
+                    <td>pending</td>
+                    <td><button class="frist">confirm</button></td>
+                    <td><button class="snd">Delete</button></td>
+                </tr>
+                <tr class="ad">
+                    <td>Shainee delwita</td>
+                    <td>2019-12-05</td>
+                    <td>2019-12-05</td>
+                    <td>4:00</td>
+                    <td>daily</td>
+                    <td>car
+                    </td>
+                    <td>1</td>
+                    <td>2019-05-21</td>
+                    <td>pending</td>
+                    <td><button class="frist">confirm</button></td>
+                    <td><button class="snd">Delete</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="footer">
+       <p>Email:Muhammadaarabyameen2007</p>
+       <p>Telephone:03231387872</p>
+       <p>Address:L:736/Sector,34/2,korangi,No#3,Karachi</p>
+    </div>
+    <div id="footer2">
+        <p>M:@."Aarib"</p>
+    </div>
+    <div id="online">Online</div>
+</body>
+</html>
